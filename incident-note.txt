@@ -1,0 +1,5 @@
+Impact: Account 4821 water-can transaction was recorded as ₹92,213.10 instead of ₹5.00.
+Root cause: The amount regex required two decimal digits, so Rs.5 was skipped and the available balance ₹92,213.10 was parsed as the transaction amount.
+Blast radius: Any supported bank message with an integer-rupee transaction amount followed by a balance could be affected by the same parsing rule.
+Fix: The amount regex now accepts an optional decimal part, and a regression test covers the Rs.5 water-can message.
+Verification: Parser tests pass and the corrected water-can transaction is normalized to ₹5.00.

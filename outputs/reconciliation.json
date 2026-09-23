@@ -1,0 +1,42 @@
+{
+  "reconciled": false,
+  "discrepancy_count": 6,
+  "discrepancies": [
+    {
+      "account_last4": "4821",
+      "field": "transactions",
+      "expected": "146",
+      "actual": "145"
+    },
+    {
+      "account_last4": "4821",
+      "field": "spend",
+      "expected": "87068.38",
+      "actual": "77966.76"
+    },
+    {
+      "account_last4": "4821",
+      "field": "micro_total",
+      "expected": "2357.51",
+      "actual": "3959.13"
+    },
+    {
+      "account_last4": "4821",
+      "field": "closing_balance",
+      "expected": "41126.34",
+      "actual": "48626.34"
+    },
+    {
+      "account_last4": "9075",
+      "field": "spend",
+      "expected": "39058.11",
+      "actual": "38207.14"
+    },
+    {
+      "account_last4": "9075",
+      "field": "micro_total",
+      "expected": "2086.34",
+      "actual": "2937.31"
+    }
+  ]
+}
